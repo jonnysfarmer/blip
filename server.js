@@ -72,7 +72,7 @@ app.use(nonceMiddleware, helmet.contentSecurityPolicy({
       'sentry.io',
     ]),
   },
-  reportOnly: false,
+  reportOnly: true,
 }));
 
 app.use(bodyParser.json({

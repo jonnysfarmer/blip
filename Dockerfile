@@ -1,4 +1,4 @@
-FROM node:10.14.2-alpine
+FROM node:12.2.0-alpine
 
 WORKDIR /app
 
@@ -20,10 +20,6 @@ RUN yarn install && \
   yarn cache clean 
 
 COPY . .
-
-ENV NODE_ENV production
-
-RUN yarn build
 
 VOLUME /app
 

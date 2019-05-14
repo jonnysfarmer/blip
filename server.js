@@ -33,7 +33,6 @@ app.use(nonceMiddleware, helmet.contentSecurityPolicy({
     baseUri: ['https://docs.helpscout.net'],
     scriptSrc: [
       "'self'",
-      "'unsafe-eval'",
       "'strict-dynamic'",
       (req, res) => {
         return `'nonce-${res.locals.nonce}'`;
@@ -73,7 +72,7 @@ app.use(nonceMiddleware, helmet.contentSecurityPolicy({
       'sentry.io',
     ]),
   },
-  reportOnly: true,
+  reportOnly: false,
 }));
 
 app.use(bodyParser.json({

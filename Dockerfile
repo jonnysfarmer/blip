@@ -21,6 +21,8 @@ RUN yarn install && \
 
 COPY . .
 
+ENV NODE_ENV production
+
 RUN yarn build
 
 VOLUME /app

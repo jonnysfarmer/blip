@@ -1,0 +1,80 @@
+yarn run v1.12.3
+$ node server
+Connect server started on port 3000
+Serving static directory "/app/dist/"
+Caching static HTML
+CSP Violation:  { 'csp-report':
+   { 'document-uri': 'https://qa1-app.tidepool.org/',
+     referrer: '',
+     'violated-directive': 'script-src',
+     'effective-directive': 'script-src',
+     'original-policy':
+      'default-src \'none\'; base-uri https://docs.helpscout.net; script-src \'self\' \'strict-dynamic\' \'nonce-lMdLS9/OcpaUdwOyFVYuIg==\' https://beacon-v2.helpscout.net https://d12wqas9hcki3z.cloudfront.net https://d33v4339jhl8k0.cloudfront.net; style-src \'self\' blob: \'unsafe-inline\' https://fonts.googleapis.com https://beacon-v2.helpscout.net https://djtflbt20bdde.cloudfront.net; img-src \'self\' data: https://d33v4339jhl8k0.cloudfront.net https://*.gravatar.com; font-src \'self\' data: https://fonts.gstatic.com; report-uri /event/csp-report/violation; object-src blob: https://beacon-v2.helpscout.net; worker-src \'self\' blob:; child-src \'self\' blob: https://docs.google.com; frame-src https://beacon-v2.helpscout.net https://docs.google.com; connect-src https://qa1-api.tidepool.org https://api.github.com/repos/tidepool-org/chrome-uploader/releases https://beaconapi.helpscout.net https://chatapi.helpscout.net https://d3hb14vkzrxvla.cloudfront.net wss://*.pusher.com *.sumologic.com sentry.io',
+     disposition: 'enforce',
+     'blocked-uri': 'eval',
+     'line-number': 1,
+     'column-number': 2928286,
+     'source-file':
+      'https://qa1-app.tidepool.org/bundle.f5eed0f3beb90f22d374.js',
+     'status-code': 0,
+     'script-sample': '' } }
+CSP Violation:  { 'csp-report':
+   { 'document-uri': 'https://qa1-app.tidepool.org/',
+     referrer: '',
+     'violated-directive': 'script-src',
+     'effective-directive': 'script-src',
+     'original-policy':
+      'default-src \'none\'; base-uri https://docs.helpscout.net; script-src \'self\' \'strict-dynamic\' \'nonce-yxlolq0dLu0F5/zmz7g5JA==\' https://beacon-v2.helpscout.net https://d12wqas9hcki3z.cloudfront.net https://d33v4339jhl8k0.cloudfront.net; style-src \'self\' blob: \'unsafe-inline\' https://fonts.googleapis.com https://beacon-v2.helpscout.net https://djtflbt20bdde.cloudfront.net; img-src \'self\' data: https://d33v4339jhl8k0.cloudfront.net https://*.gravatar.com; font-src \'self\' data: https://fonts.gstatic.com; report-uri /event/csp-report/violation; object-src blob: https://beacon-v2.helpscout.net; worker-src \'self\' blob:; child-src \'self\' blob: https://docs.google.com; frame-src https://beacon-v2.helpscout.net https://docs.google.com; connect-src https://qa1-api.tidepool.org https://api.github.com/repos/tidepool-org/chrome-uploader/releases https://beaconapi.helpscout.net https://chatapi.helpscout.net https://d3hb14vkzrxvla.cloudfront.net wss://*.pusher.com *.sumologic.com sentry.io',
+     disposition: 'enforce',
+     'blocked-uri': 'eval',
+     'line-number': 1,
+     'column-number': 2928286,
+     'source-file':
+      'https://qa1-app.tidepool.org/bundle.f5eed0f3beb90f22d374.js',
+     'status-code': 0,
+     'script-sample': '' } }
+CSP Violation:  { 'csp-report':
+   { 'document-uri': 'https://qa1-app.tidepool.org/',
+     referrer: '',
+     'violated-directive': 'script-src',
+     'effective-directive': 'script-src',
+     'original-policy':
+      'default-src \'none\'; base-uri https://docs.helpscout.net; script-src \'self\' \'strict-dynamic\' \'nonce-hR4MKpknuYW2P2FzMhRovw==\' https://beacon-v2.helpscout.net https://d12wqas9hcki3z.cloudfront.net https://d33v4339jhl8k0.cloudfront.net; style-src \'self\' blob: \'unsafe-inline\' https://fonts.googleapis.com https://beacon-v2.helpscout.net https://djtflbt20bdde.cloudfront.net; img-src \'self\' data: https://d33v4339jhl8k0.cloudfront.net https://*.gravatar.com; font-src \'self\' data: https://fonts.gstatic.com; report-uri /event/csp-report/violation; object-src blob: https://beacon-v2.helpscout.net; worker-src \'self\' blob:; child-src \'self\' blob: https://docs.google.com; frame-src https://beacon-v2.helpscout.net https://docs.google.com; connect-src https://qa1-api.tidepool.org https://api.github.com/repos/tidepool-org/chrome-uploader/releases https://beaconapi.helpscout.net https://chatapi.helpscout.net https://d3hb14vkzrxvla.cloudfront.net wss://*.pusher.com *.sumologic.com sentry.io',
+     disposition: 'enforce',
+     'blocked-uri': 'eval',
+     'line-number': 1,
+     'column-number': 2928286,
+     'source-file':
+      'https://qa1-app.tidepool.org/bundle.f5eed0f3beb90f22d374.js',
+     'status-code': 0,
+     'script-sample': '' } }
+CSP Violation:  { 'csp-report':
+   { 'document-uri': 'https://qa1-app.tidepool.org/',
+     referrer: '',
+     'violated-directive': 'script-src',
+     'effective-directive': 'script-src',
+     'original-policy':
+      'default-src \'none\'; base-uri https://docs.helpscout.net; script-src \'self\' \'strict-dynamic\' \'nonce-nhzqX5hOxSdk44ONhiSgoQ==\' https://beacon-v2.helpscout.net https://d12wqas9hcki3z.cloudfront.net https://d33v4339jhl8k0.cloudfront.net; style-src \'self\' blob: \'unsafe-inline\' https://fonts.googleapis.com https://beacon-v2.helpscout.net https://djtflbt20bdde.cloudfront.net; img-src \'self\' data: https://d33v4339jhl8k0.cloudfront.net https://*.gravatar.com; font-src \'self\' data: https://fonts.gstatic.com; report-uri /event/csp-report/violation; object-src blob: https://beacon-v2.helpscout.net; worker-src \'self\' blob:; child-src \'self\' blob: https://docs.google.com; frame-src https://beacon-v2.helpscout.net https://docs.google.com; connect-src https://qa1-api.tidepool.org https://api.github.com/repos/tidepool-org/chrome-uploader/releases https://beaconapi.helpscout.net https://chatapi.helpscout.net https://d3hb14vkzrxvla.cloudfront.net wss://*.pusher.com *.sumologic.com sentry.io',
+     disposition: 'enforce',
+     'blocked-uri': 'eval',
+     'line-number': 1,
+     'column-number': 2928286,
+     'source-file':
+      'https://qa1-app.tidepool.org/bundle.f5eed0f3beb90f22d374.js',
+     'status-code': 0,
+     'script-sample': '' } }
+CSP Violation:  { 'csp-report':
+   { 'document-uri': 'https://qa1-app.tidepool.org/signup/personal',
+     referrer: '',
+     'violated-directive': 'connect-src',
+     'effective-directive': 'connect-src',
+     'original-policy':
+      'default-src \'none\'; base-uri https://docs.helpscout.net; script-src \'self\' \'strict-dynamic\' \'nonce-nhzqX5hOxSdk44ONhiSgoQ==\' https://beacon-v2.helpscout.net https://d12wqas9hcki3z.cloudfront.net https://d33v4339jhl8k0.cloudfront.net; style-src \'self\' blob: \'unsafe-inline\' https://fonts.googleapis.com https://beacon-v2.helpscout.net https://djtflbt20bdde.cloudfront.net; img-src \'self\' data: https://d33v4339jhl8k0.cloudfront.net https://*.gravatar.com; font-src \'self\' data: https://fonts.gstatic.com; report-uri /event/csp-report/violation; object-src blob: https://beacon-v2.helpscout.net; worker-src \'self\' blob:; child-src \'self\' blob: https://docs.google.com; frame-src https://beacon-v2.helpscout.net https://docs.google.com; connect-src https://qa1-api.tidepool.org https://api.github.com/repos/tidepool-org/chrome-uploader/releases https://beaconapi.helpscout.net https://chatapi.helpscout.net https://d3hb14vkzrxvla.cloudfront.net wss://*.pusher.com *.sumologic.com sentry.io',
+     disposition: 'enforce',
+     'blocked-uri': 'https://dev-api.tidepool.org/auth/user',
+     'line-number': 1,
+     'column-number': 5674710,
+     'source-file':
+      'https://qa1-app.tidepool.org/bundle.f5eed0f3beb90f22d374.js',
+     'status-code': 0,
+     'script-sample': '' } }

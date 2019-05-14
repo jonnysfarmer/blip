@@ -33,6 +33,8 @@ var api = {
 
 api.init = function(cb) {
   var tidepoolLog = bows('Tidepool');
+  tidepoolLog( "config.API_HOST = " + config.API_HOST)
+  tidepoolLog( "process.env.API_HOST = " + process.env.API_HOST)
   tidepool = createTidepoolClient({
     host: config.API_HOST,
     dataHost: config.API_HOST + '/dataservices',

@@ -30,6 +30,7 @@ const expect = chai.expect;
 describe('PeopleTable', () => {
   const props = {
     people: [{
+      emails: ['zoedoe@gmail.com'],
         profile: {
           fullName: 'Zoe Doe',
           patient: { birthday: '1969-08-19T01:51:55.000Z' },
@@ -39,6 +40,7 @@ describe('PeopleTable', () => {
         userid: 10,
       },
       {
+        emails: ['tdoe@gmail.com'],
         profile: {
           fullName: 'Tucker Doe',
           patient: { birthday: '1977-08-19T01:51:55.000Z' },
@@ -47,6 +49,7 @@ describe('PeopleTable', () => {
         userid: 20,
       },
       {
+        emails: ['johndoe_1@gmail.com'],
         profile: {
           fullName: 'John Doe',
           patient: { birthday: '2000-08-19T01:51:55.000Z' },
@@ -55,6 +58,7 @@ describe('PeopleTable', () => {
         userid: 30,
       },
       {
+        emails: ['ajones101@gmail.com'],
         profile: {
           fullName: 'amanda jones',
           patient: { birthday: '1989-08-19T01:51:55.000Z' },
@@ -63,6 +67,7 @@ describe('PeopleTable', () => {
         userid: 40,
       },
       {
+        emails: ['annazork@yahoo.com'],
         profile: {
           fullName: 'Anna Zork',
           patient: { birthday: '2010-08-19T01:51:55.000Z' },
@@ -145,12 +150,20 @@ describe('PeopleTable', () => {
 
     it('should show a row of data for each person that matches the search value', function () {
       // showing `amanda` or `Anna`
-      wrapper.find('input').simulate('change', {target: {value: 'a'}});
+      wrapper.find('input').simulate('change', {target: {value: 'an'}});
       expect(wrapper.find('.public_fixedDataTableRow_main')).to.have.length(3);
       expect(wrapper.instance().getWrappedInstance().state.searching).to.equal(true);
+      expect(wrapper.find('.public_fixedDataTableRow_main').at(1).text()).to.include('Anna Zork')
+      expect(wrapper.find('.public_fixedDataTableRow_main').at(2).text()).to.include('amanda jones')
       // now just showing `amanda`
       wrapper.find('input').simulate('change', {target: {value: 'am'}});
       expect(wrapper.find('.public_fixedDataTableRow_main')).to.have.length(2);
+      expect(wrapper.find('.public_fixedDataTableRow_main').at(1).text()).to.include('amanda jones')
+      expect(wrapper.instance().getWrappedInstance().state.searching).to.equal(true);
+      // now just showing `amanda`, but searching via email instead of name
+      wrapper.find('input').simulate('change', {target: {value: 'ajones101'}});
+      expect(wrapper.find('.public_fixedDataTableRow_main')).to.have.length(2);
+      expect(wrapper.find('.public_fixedDataTableRow_main').at(1).text()).to.include('amanda jones')
       expect(wrapper.instance().getWrappedInstance().state.searching).to.equal(true);
     });
 

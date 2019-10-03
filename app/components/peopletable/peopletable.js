@@ -95,7 +95,7 @@ const PeopleTable = translate()(class PeopleTable extends React.Component {
     //setup default sorting but don't track via metrics
     this.handleSortChange('fullNameOrderable', SortTypes.ASC, false);
   }
-  
+
   //nextProps contains list of people being watched
   componentWillReceiveProps(nextProps) {
     //Watches for an update to the user list, if a clinician accepts an invitation then updates the visable user list
@@ -114,6 +114,7 @@ const PeopleTable = translate()(class PeopleTable extends React.Component {
       }
 
       return {
+        email: _.get(person, 'emails.0', ''),
         fullName: personUtils.patientFullName(person),
         fullNameOrderable: (personUtils.patientFullName(person) || '').toLowerCase(),
         link: person.link,
@@ -138,7 +139,7 @@ const PeopleTable = translate()(class PeopleTable extends React.Component {
     const filterBy = e.target.value.toLowerCase();
 
     const filtered = _.filter(this.buildDataList(), (person) => {
-      return _.get(person, 'fullName', '').toLowerCase().indexOf(filterBy) !== -1;
+      return (_.get(person, 'fullName', '') + _.get(person, 'email', '')).toLowerCase().indexOf(filterBy) !== -1
     });
 
     this.setState({
